@@ -29,6 +29,9 @@ printf("¿Qué es Git?\na) Un sistema de control de versiones\nb) Un lenguaje de
  */
 
 char capturarRespuesta() {
+    respuesta=getch();
+    
+
     //AGREGAR LA IMPLEMENTACIÓN PARA LEER LA RESPUESTA DEL JUGADOR.
     //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN.
 }
@@ -45,6 +48,18 @@ char capturarRespuesta() {
 
 int verificarRespuesta(Pregunta pregunta, char respuesta) {
     //AGREGAR LA IMPLEMENTACIÓN PARA VERIFICAR SI RESPONDIÓ BIEN LA PREGUNTA.
+    if (pregunta.respuestaCorrecta == respuesta)
+    {
+        puntaje=puntaje+1;
+    }
+
+    else
+    {}
+    if (pregunta.respuestaCorrecta != respuesta)
+    {
+        puntaje=puntaje+0;
+    }
+
     //NO MODIFIQUES LA FIRMA DE LA FUNCIÓN. 
 }
 
